@@ -21,5 +21,19 @@ colorscheme murphy "Change a colorscheme
 
 set directory=$HOME/.vim/swap// "Directory for storing swap file
 
-silent! helptags All "Load helpfiles for each plugins (documentation).
+silent! helptags ALL "Load helpfiles for each plugins (documentation).
+
+" Generate help tags for installed plugins
+if isdirectory($HOME . "/.vim/pack/plugins/start/vim-unimpaired/doc")
+  silent! execute 'helptags ' . $HOME . '/.vim/pack/plugins/start/vim-unimpaired/doc'
+endif
+
+
+"split window switch mapping
+
+noremap <c-h> <c-w><c-h> | "left mapping to ctrl h
+noremap <c-l> <c-w><c-l> |"right mapping to ctrl l
+noremap <c-k> <c-w><c-k> |"top mapping to ctrl k
+noremap <c-j> <c-w><c-j> |"bottom mapping to ctrl b
+
 
