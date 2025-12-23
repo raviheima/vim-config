@@ -38,4 +38,10 @@ noremap <c-j> <c-w><c-j> |"bottom mapping to ctrl b
 
 command! Bd :bp | bd # "Close buffer without closing window
 "folding code
-autocmd filetype * set foldmethod=indent
+" Default for all files
+set foldmethod=indent
+
+" Override for specific filetypes
+autocmd FileType vim set foldmethod=marker
+autocmd FileType c,cpp set foldmethod=syntax
+autocmd FileType markdown set foldmethod=manual
