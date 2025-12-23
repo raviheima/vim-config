@@ -45,3 +45,8 @@ set foldmethod=indent
 autocmd FileType vim set foldmethod=marker
 autocmd FileType c,cpp set foldmethod=syntax
 autocmd FileType markdown set foldmethod=manual
+
+"wild menu with :e enabled
+set wildmenu "Enable enhanced tab autocomplete.
+set wildmode=list:longest,full "Shows list with longest starting prefix
+
