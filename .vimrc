@@ -36,4 +36,6 @@ noremap <c-l> <c-w><c-l> |"right mapping to ctrl l
 noremap <c-k> <c-w><c-k> |"top mapping to ctrl k
 noremap <c-j> <c-w><c-j> |"bottom mapping to ctrl b
 
-
+command! Bd :bp | bd # "Close buffer without closing window
+"folding code
+autocmd filetype * set foldmethod=indent
