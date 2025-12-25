@@ -60,4 +60,6 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 "Prevent NERDTree from replacing Netwr
 let NERDTreeHijackNetrw=0
-set number
+set number "Enable line numbering.
+set hlsearch "Enable highlight for matching search patterns.
+set incsearch "Move cursor to matching pattern
