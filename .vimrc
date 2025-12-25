@@ -63,3 +63,25 @@ let NERDTreeHijackNetrw=0
 set number "Enable line numbering.
 set hlsearch "Enable highlight for matching search patterns.
 set incsearch "Move cursor to matching pattern
+
+"Add minpac plugins manager
+packadd minpac "load minpac
+call minpac#init() "Initialise minpac
+
+" Install plugins
+"Add minpac plugins manager
+packadd minpac
+call minpac#init()
+
+"my plugins
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+call minpac#add('mileszs/ack.vim')
+call minpac#add('ctrlpvim/ctrlp.vim')
+call minpac#add('preservim/nerdtree')
+call minpac#add('easymotion/vim-easymotion')
+call minpac#add('tpope/vim-unimpaired')
+call minpac#add('tpope/vim-vinegar')
+
+"Minpac update and clean alternate commands
+command! PackUpdate call minpac#update()
+command! PackClean call minpac#clean()
