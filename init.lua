@@ -3,3 +3,5 @@ vim.cmd([[
     let &packpath = &runtimepath
     source ~/.vim/.vimrc
     ]])
+
+require("config.lazy")
