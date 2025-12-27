@@ -1,5 +1,10 @@
-return { {
+return {{
   'vyfor/cord.nvim',
   build = ':Cord update',
-  -- opts = {}
+   opts = {
+        text = {
+
+            workspace = "Avoid spaghetti code.",
+        },
+   },
 }}
