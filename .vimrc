@@ -81,7 +81,10 @@ call minpac#add('preservim/nerdtree')
 call minpac#add('easymotion/vim-easymotion')
 call minpac#add('tpope/vim-unimpaired')
 call minpac#add('tpope/vim-vinegar')
+call minpac#add('wakatime/vim-wakatime')
 
 "Minpac update and clean alternate commands
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
+
+"Plugin 'wakatime/vim-wakatime'
