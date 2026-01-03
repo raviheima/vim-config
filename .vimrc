@@ -88,3 +88,12 @@ command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
 "Plugin 'wakatime/vim-wakatime'
+
+"Set persistent undo history
+set undofile
+let my_undo_dir = expand('$HOME/.vim/undodir')
+if !isdirectory('$HOME/.vim/undodir')
+    call mkdir('$HOME/.vim/undodir', "p")
+endif
+set undodir=my_undo_dir
+    
