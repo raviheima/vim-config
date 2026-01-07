@@ -82,7 +82,7 @@ call minpac#add('easymotion/vim-easymotion')
 call minpac#add('tpope/vim-unimpaired')
 call minpac#add('tpope/vim-vinegar')
 call minpac#add('wakatime/vim-wakatime')
-
+call minpac#add('907th/vim-auto-save')
 "Minpac update and clean alternate commands
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
@@ -91,9 +91,12 @@ command! PackClean call minpac#clean()
 
 "Set persistent undo history
 set undofile
-let my_undo_dir = expand('$HOME/.vim/undodir')
-if !isdirectory('$HOME/.vim/undodir')
-    call mkdir('$HOME/.vim/undodir', "p")
+let my_undo_dir = expand('~/.vim/undodir')
+if !isdirectory('~/.vim/undodir')
+    call mkdir('~/.vim/undodir', "p")
 endif
 set undodir=my_undo_dir
     
+"enable auto save
+" .vimrc
+let g:auto_save = 1  " enable AutoSave on Vim startup
