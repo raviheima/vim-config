@@ -92,10 +92,10 @@ command! PackClean call minpac#clean()
 "Set persistent undo history
 set undofile
 let my_undo_dir = expand('~/.vim/undodir')
-if !isdirectory('~/.vim/undodir')
-    call mkdir('~/.vim/undodir', "p")
+if !isdirectory(my_undo_dir)
+    call mkdir(my_undo_dir, "p")
 endif
-set undodir=my_undo_dir
+set undodir=$HOME/.vim/my_undo_dir
     
 "enable auto save
 " .vimrc
