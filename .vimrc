@@ -83,6 +83,7 @@ call minpac#add('tpope/vim-unimpaired')
 call minpac#add('tpope/vim-vinegar')
 call minpac#add('wakatime/vim-wakatime')
 call minpac#add('907th/vim-auto-save')
+call minpac#add('mileszs/ack.vim')
 "Minpac update and clean alternate commands
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
